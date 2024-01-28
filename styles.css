@@ -26,10 +26,41 @@ html, body{
     width: 100%;
 }
 
+
 #bounding{
     overflow: hidden;
     width: fit-content;
 }
+#textContainer{
+    position: relative;
+}
+
+.hiddenText{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position:absolute;
+    opacity: 0;
+    transform: translateY(-50%);
+    transition: all 1s ease-in-out;
+    flex-direction: row;
+    
+}
+.boundingelemMenu{
+    position: relative;
+    opacity: 1;
+    transition: all 1s ease-in-out;
+    transform: translateY(0%);
+}
+#navMenu{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+}
+
 
 #bounding .boundingelem{
     transform: translateY(100%);

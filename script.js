@@ -38,6 +38,7 @@ function circleMouseFollower(xscale,yscale) {
     })
 }
 
+
 function firstPageAnim() {
     var tl= gsap.timeline();
 
@@ -116,6 +117,30 @@ document.querySelectorAll(".elem").forEach(function(elem){
     //      window.location.href = "https://github.com/tanaysarkar0408";
     // });
 });
+
+// document.querySelector(".boundingelemMenu").addEventListener("click", function(elem){
+//     console.log(" ELEM CLICKED");
+    
+// });
+
+function moveMenuDown() {
+    window.addEventListener("click",function(dets){
+        console.log(" Menu CLICKED");
+        document.querySelector(".boundingelemMenu").style.transform = "translateY(100%)";
+        document.querySelector(".boundingelemMenu").style.opacity = 0;
+    });
+}
+function moveResumeDown() {
+    window.addEventListener("click",function(dets){
+        console.log(" Resume CLICKED");
+        document.querySelector(".hiddenText").style.transform = "translateY(-10%)";
+        document.querySelector(".hiddenText").style.opacity = 1;
+    });
+}
+
+moveResumeDown();
+moveMenuDown();
+
 
 document.querySelector(".elem").addEventListener("click", function(){
     window.location.href = "https://github.com/tanaysarkar0408/messenger";
